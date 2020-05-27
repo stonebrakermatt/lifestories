@@ -1,0 +1,99 @@
+/******************************************************************************/
+/* resources.less - importer file for custom fonts, images, breakpoints, etc. */
+/******************************************************************************/
+/****************************************************/
+/* breakpoints.less - responsive design breakpoints */
+/****************************************************/
+/*********************************************/
+/* containers.less - preset container styles */
+/*********************************************/
+/**********************************************************/
+/* reset.less - override some default css values sitewide */
+/**********************************************************/
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* scrollbars */
+  overflow-y: scroll;
+  ms-overflow-style: none;
+  scrollbar-width: none;
+}
+a {
+  text-decoration: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+/**************************************/
+/* colors.less - custom color palette */
+/**************************************/
+/*****************************/
+/* fonts.less - custom fonts */
+/*****************************/
+@font-face {
+  font-family: Aaargh;
+  src: url('../fonts/aaargh.ttf');
+}
+@font-face {
+  font-family: Codec;
+  src: url('../fonts/codec.ttf');
+}
+@font-face {
+  font-family: Tutor;
+  src: url('../fonts/tutor.ttf');
+}
+#root {
+  height: 100%;
+  width: 100%;
+}
+#root #titlebar {
+  display: grid;
+  grid-template-columns: 144px calc(100% - 144px);
+  height: 72px;
+  width: 100%;
+}
+#root #titlebar #logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#root #titlebar #logo img {
+  height: 48px;
+  width: 48px;
+  margin: auto;
+}
+#root #titlebar #logo #contact {
+  height: 16px;
+  width: 100%;
+  text-align: center;
+}
+#root #titlebar #nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#root #titlebar #nav a {
+  display: inline-block;
+  margin: auto 12px;
+}
+#root #app {
+  height: calc(100% - 72px);
+  width: 100%;
+  padding: 72px;
+}

@@ -1,0 +1,48 @@
+// style.less - custom styles
+
+// basic global styles, less mixins and variables
+@import "resources";
+
+#root {
+    height: 100%;
+    width: 100%;
+    
+    #titlebar { 
+        display: grid;
+        grid-template-columns: 144px calc(100% - 144px);
+        height: 72px;
+        width: 100%;
+        #logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 48px;
+                width: 48px;
+                margin: auto;
+            }
+            #contact {
+                height: 16px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        #nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            a {
+                display: inline-block;
+                margin: auto 12px;
+            }
+        }
+
+    }
+    #app {
+        height: calc(100% - 72px);
+        width: 100%;
+        padding: 72px;
+    }
+}

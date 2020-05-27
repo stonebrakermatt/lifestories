@@ -1,0 +1,45 @@
+/*****************************/
+/* fonts.less - custom fonts */
+/*****************************/
+
+// load aaargh font
+@font-face {
+    font-family: Aaargh;
+    src: url('../fonts/aaargh.ttf');
+}
+
+// load codec font
+@font-face {
+    font-family: Codec;
+    src: url('../fonts/codec.ttf');
+}
+
+// load tutor font
+@font-face {
+    font-family: Tutor;
+    src: url('../fonts/tutor.ttf');
+}
+
+// mixins for setting fonts
+#fonts() {
+    .title-font(@font-size: 24px, @line-height: 56px) {
+        font-family: Tutor;
+        font-size: @font-size;
+        line-height: @line-height;
+        text-align: center;
+        transition: font-size 0.5s, line-height 0.5s;
+    }
+    .header-font(@font-size: 24px, @line-height: 36px) {
+        font-family: Codec;
+        font-size: @font-size;
+        line-height: @line-height;
+        text-align: center;
+        transition: font-size 0.5s, line-height 0.5s;
+    }
+    .body-font(@font-size: 16px, @line-height: 24px) {
+        font-family: Aaargh;
+        font-size: @font-size;
+        line-height: @line-height;
+        transition: font-size 0.5s, line-height 0.5s;
+    }
+}

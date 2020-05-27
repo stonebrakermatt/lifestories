@@ -1,0 +1,21 @@
+/**************************************/
+/* colors.less - custom color palette */
+/**************************************/
+
+// color definitions
+@palette: {
+    black: #000000;
+    denim: #55AAFF;
+    rajah: #FFAA55;
+    white: #FFFFFF;
+}
+
+// mixins for setting foreground and background colors
+#color() {
+    .foreground(@color) {
+        color: @color;
+    }
+    .background(@color) {
+        background-color: @color;
+    }
+}
