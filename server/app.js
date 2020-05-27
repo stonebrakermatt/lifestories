@@ -2,10 +2,6 @@
  * app.js - a simple node-express webserver
  */
 
-// load config file and environment variables
-const config = require('./config')
-const env = process.env.NODE_ENV
-
 // for req.body
 const bodyParser = require('body-parser')
 
@@ -27,8 +23,8 @@ app.use(express.static('/home/matt/repositories/lifestories/public'))
 app.use('/', router)
 
 // determine host and port and listen for requests
-const addr = config[env].addr, port = config[env].port
+const addr = '0.0.0.0', port = 3000
 app.listen(port, addr, () => {
-    console.log(`Running ${process.env.NODE_ENV} server:`)
+    console.log(`Running dev server:`)
     console.log(`Listening on ${addr}:${port}`) 
 })
