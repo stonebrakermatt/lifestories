@@ -5,7 +5,6 @@
 // load config file and environment variables
 const config = require('./config')
 const env = process.env.NODE_ENV
-const path = require('path')
 
 // for req.body
 const bodyParser = require('body-parser')
