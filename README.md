@@ -30,7 +30,7 @@ npm start
 react source files are located in `/src/js` and the root file for the bundle is `src/js/index.js`
 
 
-less source files are located in `/src/less` and the root file for the bundle is `src/less/styles.less`
+less source files are located in `/src/less` and the root file for the bundle is `src/less/style.less`
 
 ##### bundle react and compile less into css, respectively
 
