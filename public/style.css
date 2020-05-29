@@ -160,6 +160,10 @@ body::-webkit-scrollbar {
 #root #app #home {
   padding: 10px;
   text-align: center;
+  height: 100%;
+}
+#root #app #home p {
+  margin: 72px 0px;
 }
 #root #app #portfolio {
   padding: 10px;
@@ -237,6 +241,10 @@ body::-webkit-scrollbar {
 }
 #root #app #contact #contact-form label {
   line-height: 3;
+}
+#root #app #contact #contact-form #request {
+  line-height: 2;
+  padding: 10px;
 }
 #root #app #contact #contact-form #submit {
   grid-column-end: span 2;
