@@ -76,6 +76,7 @@ body::-webkit-scrollbar {
     display: block;
     height: calc(100% - 96px);
     width: 100%;
+    overflow-y: scroll;
   }
 }
 #root #titlebar > #logo-container {
@@ -155,4 +156,103 @@ body::-webkit-scrollbar {
   background: cyan;
   margin-bottom: 24px;
   width: 100%;
+}
+#root #app #home {
+  padding: 10px;
+  text-align: center;
+}
+#root #app #portfolio {
+  padding: 10px;
+  text-align: center;
+}
+#root #app #portfolio #project-container {
+  background: blue;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: 200px;
+  padding: 10px;
+}
+#root #app #portfolio #project-container .project {
+  background: pink;
+  height: 184px;
+  width: 184px;
+  margin: 0 auto;
+}
+@media (min-width: 450px) {
+  #root #app #portfolio #project-container {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (min-width: 600px) {
+  #root #app #portfolio #project-container {
+    grid-auto-rows: 275px;
+  }
+  #root #app #portfolio #project-container .project {
+    height: 256px;
+    width: 256px;
+  }
+}
+@media (min-width: 900px) {
+  #root #app #portfolio #project-container {
+    grid-template-columns: 33.3% 33.4% 33.3%;
+  }
+}
+#root #app #about {
+  padding: 10px;
+  text-align: center;
+}
+#root #app #about #chad-container {
+  background: blue;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 256px auto;
+}
+#root #app #about #chad-container #chad-img {
+  background: pink;
+  height: 256px;
+  width: 144px;
+  text-align: center;
+  margin: auto;
+}
+#root #app #about #chad-container #chad-txt {
+  background: pink;
+  width: 100%;
+}
+@media (min-width: 450px) {
+  #root #app #about #chad-container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: unset;
+  }
+}
+#root #app #contact {
+  padding: 10px;
+  text-align: center;
+}
+#root #app #contact #contact-form {
+  display: grid;
+  grid-template-columns: 100px calc(100% - 112px);
+  grid-template-rows: 50px 50px 50px auto;
+  grid-row-gap: 24px;
+  grid-column-gap: 12px;
+}
+#root #app #contact #contact-form label {
+  line-height: 3;
+}
+#root #app #contact #contact-form #submit {
+  grid-column-end: span 2;
+  width: 200px;
+  margin: auto;
+}
+@media (min-width: 600px) {
+  #root #app #contact #contact-form {
+    grid-template-columns: 100px calc(50% - 118px) 100px calc(50% - 118px);
+    grid-template-rows: 50px 50px auto;
+  }
+  #root #app #contact #contact-form #subject,
+  #root #app #contact #contact-form #request {
+    grid-column-end: span 3;
+  }
+  #root #app #contact #contact-form #submit {
+    grid-column-end: span 4;
+  }
 }
