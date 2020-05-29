@@ -62,38 +62,97 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 #root #titlebar {
-  display: grid;
-  grid-template-columns: 144px calc(100% - 144px);
-  height: 72px;
+  height: 100%;
   width: 100%;
 }
-#root #titlebar #logo {
+#root #app {
+  display: none;
+}
+@media (min-height: 300px) and (min-width: 300px) {
+  #root #titlebar {
+    height: 96px;
+  }
+  #root #app {
+    display: block;
+    height: calc(100% - 96px);
+    width: 100%;
+  }
+}
+#root #titlebar > #logo-container {
+  background: orange;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
-#root #titlebar #logo img {
-  height: 48px;
-  width: 48px;
+#root #titlebar > #logo-container img#logo-img {
+  display: box;
+  height: 72px;
+  width: 72px;
   margin: auto;
 }
-#root #titlebar #logo #contact {
-  height: 16px;
+#root #titlebar > #logo-container #logo-contact {
+  height: 24px;
   width: 100%;
   text-align: center;
 }
-#root #titlebar #nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+#root #titlebar > #logo-container #logo-smallscreen-err {
+  height: 48px;
+  width: 100%;
+  text-align: center;
 }
-#root #titlebar #nav a {
-  display: inline-block;
-  margin: auto 12px;
+#root #nav {
+  display: none;
+}
+@media (min-height: 300px) and (min-width: 300px) {
+  #root #titlebar {
+    background: red;
+    display: grid;
+    grid-template-columns: calc(50% - 144px) 288px calc(50% - 144px);
+    grid-template-rows: 64px 32px;
+  }
+  #root #titlebar #logo-container {
+    grid-column: 2;
+    grid-row: 1;
+    flex-direction: row;
+  }
+  #root #titlebar #logo-container img#logo-img {
+    height: 64px;
+    width: 64px;
+    margin: unset;
+    margin-left: auto;
+  }
+  #root #titlebar #logo-container #logo-contact {
+    margin-right: auto;
+    width: unset;
+  }
+  #root #titlebar #logo-container #logo-smallscreen-err {
+    display: none;
+  }
+  #root #titlebar #nav {
+    background: yellow;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root #titlebar #nav a {
+    display: inline-block;
+    margin: auto 12px;
+  }
 }
 #root #app {
-  height: calc(100% - 72px);
+  background: green;
+  padding: 24px;
+}
+#root #app #home,
+#root #app #portfolio,
+#root #app #about,
+#root #app #contact {
+  background: cyan;
+  margin-bottom: 24px;
   width: 100%;
-  padding: 72px;
 }

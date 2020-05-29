@@ -4,11 +4,14 @@ export default class TitleBar extends React.Component {
     render() {
         return (
             <div id="titlebar">
-                <div id="logo">
-                    <img src="/images/ls1500.png"/>
-                    <div id="contact">
+                <div id="logo-container">
+                    <img id="logo-img" src="/images/ls1500.png"/>
+                    <p id="logo-contact">
                         214-288-2262
-                    </div>
+                    </p>
+                    <p id="logo-smallscreen-err">
+                        Device too small to load webpage
+                    </p>
                 </div>
                 <nav id="nav">
                     <a>Portfolio</a>
