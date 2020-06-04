@@ -173,6 +173,7 @@ body::-webkit-scrollbar {
   box-shadow: 0px 0px 5px black;
   padding: 10px;
   text-align: center;
+<<<<<<< HEAD
   grid-row: 1;
   grid-column: 1;
   background: rgba(255, 255, 255, 0.75);
@@ -190,6 +191,8 @@ body::-webkit-scrollbar {
   height: 36px;
   width: 144px;
   margin: auto;
+=======
+>>>>>>> parent of f74c253... Minor changes
 }
 #root #app #portfolio {
   padding: 10px;
@@ -267,10 +270,6 @@ body::-webkit-scrollbar {
 }
 #root #app #contact #contact-form label {
   line-height: 3;
-}
-#root #app #contact #contact-form #request {
-  line-height: 2;
-  padding: 10px;
 }
 #root #app #contact #contact-form #submit {
   grid-column-end: span 2;
