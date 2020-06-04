@@ -152,9 +152,6 @@ body::-webkit-scrollbar {
 #root #app #about,
 #root #app #contact {
   background: cyan;
-  display: grid;
-  grid-template-rows: 100px calc(100% - 150px) 50px;
-  grid-template-columns: 100%;
   margin-bottom: 24px;
   width: 100%;
 }
