@@ -3,7 +3,7 @@ import React from 'react'
 export default class AboutPage extends React.Component {
     render() {
         return (
-            <div id="about">
+            <section id="about">
                 <p>About Section</p>
                 <div id="chad-container">
                     <div id="chad-img">Picture of Chad</div>
@@ -13,7 +13,7 @@ export default class AboutPage extends React.Component {
                         Maybe One More Paragraph Idk UwU
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

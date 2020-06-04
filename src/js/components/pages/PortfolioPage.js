@@ -3,7 +3,7 @@ import React from 'react'
 export default class PortfolioPage extends React.Component {
     render() {
         return (
-            <div id="portfolio">
+            <section id="portfolio">
                 <p>Portfolio Section</p>
                 <div id="project-container">
                     <div class="project">Project 1</div>
@@ -13,7 +13,7 @@ export default class PortfolioPage extends React.Component {
                     <div class="project">Project 5</div>
                     <div class="project">Project 6</div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

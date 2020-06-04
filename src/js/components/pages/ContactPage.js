@@ -3,7 +3,7 @@ import React from 'react'
 export default class ContactPage extends React.Component {
     render() {
         return (
-            <div id="contact">
+            <section id="contact">
                 <p>Contact Section</p>
                 <form id="contact-form">
                     <label id="fname-label" htmlFor="fname">First name:</label>
@@ -18,7 +18,7 @@ export default class ContactPage extends React.Component {
                     </textarea>
                     <input id="submit" type="submit" value="Submit"/>
                 </form>
-            </div>
+            </section>
         )
     }
 }
