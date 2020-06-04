@@ -1,6 +1,6 @@
 import React from 'react'
-import App from './components/App'
-import TitleBar from './components/TitleBar'
+import App from './App'
+import TitleBar from './TitleBar'
 
 export default class Grid extends React.Component {
     render() {
