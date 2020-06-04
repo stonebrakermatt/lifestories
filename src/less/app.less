@@ -2,53 +2,16 @@
 
 #app {
     #home, #portfolio, #about, #contact {
+        background: cyan;
         display: grid;
         grid-template-rows: 100px calc(100% - 150px) 50px;
         grid-template-columns: 100%;
         margin-bottom: 24px;
         width: 100%;
     }
-    #portfolio, #about, #contact {
-        background: cyan;
-    }
     #home {
-<<<<<<< HEAD
-        height: 100%;
-        img#bg-img {
-            position: relative;
-            grid-row: 1 / span 3;
-            grid-column: 1;
-            z-index: -1;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-        #home-txt {
-            box-shadow: 0px 0px 5px black;
-            padding: 10px;
-            text-align: center;
-            grid-row: 1;
-            grid-column: 1;
-            background: rgba(255, 255, 255, 0.75);
-            margin: 0 auto;
-            h1 {
-                font-size: 24px;
-            }
-            h3 {
-                font-size: 16px;
-            }
-        }
-        #viewportfoliobtn {
-            grid-row: 3;
-            grid-column: 1;
-            height: 36px;
-            width: 144px;
-            margin: auto;
-        }
-=======
         padding: 10px;
         text-align: center;
->>>>>>> parent of f74c253... Minor changes
     }
 
     #portfolio {

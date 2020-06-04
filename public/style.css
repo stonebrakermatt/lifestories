@@ -79,7 +79,11 @@ body::-webkit-scrollbar {
     overflow-y: scroll;
   }
 }
+#root #titlebar {
+  background: red;
+}
 #root #titlebar > #logo-container {
+  background: orange;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,6 +135,7 @@ body::-webkit-scrollbar {
     display: none;
   }
   #root #titlebar #nav {
+    background: yellow;
     grid-column: 1 / span 3;
     grid-row: 2;
     display: flex;
@@ -146,53 +151,16 @@ body::-webkit-scrollbar {
 #root #app #portfolio,
 #root #app #about,
 #root #app #contact {
+  background: cyan;
   display: grid;
   grid-template-rows: 100px calc(100% - 150px) 50px;
   grid-template-columns: 100%;
   margin-bottom: 24px;
   width: 100%;
 }
-#root #app #portfolio,
-#root #app #about,
-#root #app #contact {
-  background: cyan;
-}
 #root #app #home {
-  height: 100%;
-}
-#root #app #home img#bg-img {
-  position: relative;
-  grid-row: 1 / span 3;
-  grid-column: 1;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-#root #app #home #home-txt {
-  box-shadow: 0px 0px 5px black;
   padding: 10px;
   text-align: center;
-<<<<<<< HEAD
-  grid-row: 1;
-  grid-column: 1;
-  background: rgba(255, 255, 255, 0.75);
-  margin: 0 auto;
-}
-#root #app #home #home-txt h1 {
-  font-size: 24px;
-}
-#root #app #home #home-txt h3 {
-  font-size: 16px;
-}
-#root #app #home #viewportfoliobtn {
-  grid-row: 3;
-  grid-column: 1;
-  height: 36px;
-  width: 144px;
-  margin: auto;
-=======
->>>>>>> parent of f74c253... Minor changes
 }
 #root #app #portfolio {
   padding: 10px;
