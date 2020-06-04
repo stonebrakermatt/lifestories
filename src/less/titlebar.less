@@ -1,11 +1,10 @@
 // titlebar.less - custom styles
 
 #titlebar {
-    background: red;
+    background: white;
 }
 
 #titlebar > #logo-container {
-    background: orange;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +36,7 @@
 @media @heights[300] and @widths[300] {
     #titlebar { 
         display: grid;
-        grid-template-columns: calc(50% - 144px) 288px calc(50% - 144px);
+        grid-template-columns: calc(50% - 150px) 300px calc(50% - 150px);
         grid-template-rows: 64px 32px;
         #logo-container {
             grid-column: 2;
@@ -50,6 +49,8 @@
                 margin-left: auto;
             }
             #logo-contact {
+                padding: 0px 12px;
+                color: #818285;
                 margin-right: auto;
                 width: unset;
             }
@@ -59,7 +60,7 @@
         }
 
         #nav {
-            background: yellow;
+            background: white;
             grid-column: 1 / span 3;
             grid-row: 2;
             display: flex;
@@ -69,6 +70,21 @@
                 display: inline-block;
                 margin: auto 12px;
             }
+        }
+    }
+}
+
+@media @widths[750] {
+    #titlebar {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 96px;
+        #logo-container {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        #nav {
+            grid-row: 1;
+            grid-column: 2;
         }
     }
 }
