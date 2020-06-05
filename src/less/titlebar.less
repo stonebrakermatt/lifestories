@@ -2,74 +2,46 @@
 
 #titlebar {
     background: white;
-}
-
-#titlebar > #logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    img#logo-img {
-        display: box;
-        height: 72px;
-        width: 72px;
-        margin: auto;
-    }
-    #logo-contact {
-        height: 24px;
-        width: 100%;
-        text-align: center;
-    }
-    #logo-smallscreen-err {
-        height: 48px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-#nav {
-    display: none;
-}
-
-@media @heights[300] and @widths[300] {
-    #titlebar { 
-        display: grid;
-        grid-template-columns: calc(50% - 150px) 300px calc(50% - 150px);
-        grid-template-rows: 64px 32px;
-        #logo-container {
-            grid-column: 2;
-            grid-row: 1;
-            flex-direction: row;
-            img#logo-img {
-                height: 64px;
-                width: 64px;
-                margin: unset;
-                margin-left: auto;
-            }
-            #logo-contact {
-                padding: 0px 12px;
-                color: #818285;
-                margin-right: auto;
-                width: unset;
-            }
-            #logo-smallscreen-err {
-                display: none;
-            }
+    display: grid;
+    grid-template-columns: calc(50% - 150px) 300px calc(50% - 150px);
+    grid-template-rows: 64px 32px;
+    #logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2;
+        grid-row: 1;
+        flex-direction: row;
+        img#logo-img {
+            height: 64px;
+            width: 64px;
+            margin: unset;
+            margin-left: auto;
         }
+        #logo-contact {
+            padding: 0px 12px;
+            color: #818285;
+            margin-right: auto;
+            width: unset;
+        }
+        #logo-smallscreen-err {
+            display: none;
+        }
+    }
 
-        #nav {
-            background: white;
-            grid-column: 1 / span 3;
-            grid-row: 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            a {
-                display: inline-block;
-                margin: auto 12px;
-            }
+    #nav {
+        background: white;
+        grid-column: 1 / span 3;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a, a:visited, a:hover {
+            color: #137FC8;
+        }
+        a {
+            display: inline-block;
+            margin: auto 12px;
         }
     }
 }

@@ -1,35 +1,47 @@
 // portfoliopage.less - custom styles
 
 #portfolio {
-    padding: 10px;
-    text-align: center;
+    width: 100%;
+    
+    h1 {
+        font-size: 32px;
+        margin: 24px 0;
+        text-align: center;
+    }
 
     #project-container {
-        background: blue;
         display: grid;
-        grid-template-columns: 100%;
-        grid-auto-rows: 200px;
-
-        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-row-gap: 24px;
+        grid-column-gap: 24px;
+        
         .project {
-            background: pink;
-            height: 184px;
-            width: 184px;
-            margin: 0 auto;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .projectimg {
+                height: 184px;
+                margin: 0 auto;
+            }
+
+            .testimonial-container {
+                text-align: center;
+                .testimonial {
+                    font-style: italic;
+                }
+            }
+
         }
         
-        @media @widths[450] {
-            grid-template-columns: 50% 50%;
-        }
         @media @widths[600] {
-            grid-auto-rows: 275px;
-            .project {
-                height: 256px;
-                width: 256px;
-            }
+            grid-template-columns: 1fr 1fr;
         }
         @media @widths[900] {
-            grid-template-columns: 33.3% 33.4% 33.3%;
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }

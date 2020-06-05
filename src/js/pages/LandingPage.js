@@ -7,10 +7,12 @@ export default class LandingPage extends React.Component {
                 <div id="home-gradient">
                     <div id="home-txt">
                         <h1>Life Stories</h1>
-                        <h3>Capturing your story - your legacy</h3> 
-                        <a id="viewportfoliobtn" href="/">
-                            View Portfolio
-                        </a>
+                        <h2>Capturing Your Legacy</h2> 
+                        <div id="viewportfolio">
+                            <a id="viewportfoliobtn" href="#portfolio">
+                                View Portfolio
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -10,14 +10,11 @@ export default class TitleBar extends React.Component {
                         <p id="logo-phone">214-288-2262</p>
                         <p id="logo-email">chad@lifestories.com</p>
                     </div>
-                    <p id="logo-smallscreen-err">
-                        Device too small to load webpage
-                    </p>
                 </div>
                 <nav id="nav">
-                    <a>Portfolio</a>
-                    <a>About Us</a>
-                    <a>Contact</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
                 </nav>
             </div>  
         )

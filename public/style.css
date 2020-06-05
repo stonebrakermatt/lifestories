@@ -62,91 +62,60 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 #root #titlebar {
-  height: 100%;
+  height: 96px;
   width: 100%;
 }
 #root #app {
-  display: none;
-}
-@media (min-height: 300px) and (min-width: 300px) {
-  #root #titlebar {
-    height: 96px;
-  }
-  #root #app {
-    display: block;
-    height: calc(100% - 96px);
-    width: 100%;
-    overflow-y: scroll;
-  }
+  display: block;
+  height: calc(100% - 96px);
+  width: 100%;
+  overflow-y: scroll;
 }
 #root #titlebar {
   background: white;
+  display: grid;
+  grid-template-columns: calc(50% - 150px) 300px calc(50% - 150px);
+  grid-template-rows: 64px 32px;
 }
-#root #titlebar > #logo-container {
+#root #titlebar #logo-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  align-items: center;
+  grid-column: 2;
+  grid-row: 1;
+  flex-direction: row;
 }
-#root #titlebar > #logo-container img#logo-img {
-  display: box;
-  height: 72px;
-  width: 72px;
-  margin: auto;
+#root #titlebar #logo-container img#logo-img {
+  height: 64px;
+  width: 64px;
+  margin: unset;
+  margin-left: auto;
 }
-#root #titlebar > #logo-container #logo-contact {
-  height: 24px;
-  width: 100%;
-  text-align: center;
+#root #titlebar #logo-container #logo-contact {
+  padding: 0px 12px;
+  color: #818285;
+  margin-right: auto;
+  width: unset;
 }
-#root #titlebar > #logo-container #logo-smallscreen-err {
-  height: 48px;
-  width: 100%;
-  text-align: center;
-}
-#root #nav {
+#root #titlebar #logo-container #logo-smallscreen-err {
   display: none;
 }
-@media (min-height: 300px) and (min-width: 300px) {
-  #root #titlebar {
-    display: grid;
-    grid-template-columns: calc(50% - 150px) 300px calc(50% - 150px);
-    grid-template-rows: 64px 32px;
-  }
-  #root #titlebar #logo-container {
-    grid-column: 2;
-    grid-row: 1;
-    flex-direction: row;
-  }
-  #root #titlebar #logo-container img#logo-img {
-    height: 64px;
-    width: 64px;
-    margin: unset;
-    margin-left: auto;
-  }
-  #root #titlebar #logo-container #logo-contact {
-    padding: 0px 12px;
-    color: #818285;
-    margin-right: auto;
-    width: unset;
-  }
-  #root #titlebar #logo-container #logo-smallscreen-err {
-    display: none;
-  }
-  #root #titlebar #nav {
-    background: white;
-    grid-column: 1 / span 3;
-    grid-row: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #root #titlebar #nav a {
-    display: inline-block;
-    margin: auto 12px;
-  }
+#root #titlebar #nav {
+  background: white;
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #titlebar #nav a,
+#root #titlebar #nav a:visited,
+#root #titlebar #nav a:hover {
+  color: #137FC8;
+}
+#root #titlebar #nav a {
+  display: inline-block;
+  margin: auto 12px;
 }
 @media (min-width: 750px) {
   #root #titlebar {
@@ -162,17 +131,10 @@ body::-webkit-scrollbar {
     grid-column: 2;
   }
 }
-#root #app #home,
-#root #app #portfolio,
-#root #app #about,
-#root #app #contact {
-  background: cyan;
-  margin-bottom: 24px;
-  width: 100%;
-}
 #root #app #home {
   text-align: center;
   height: 100%;
+  width: 100%;
   background-image: url("images/lifestoriescompanyphoto.jpeg");
   background-size: cover;
 }
@@ -188,12 +150,35 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 24px;
-  text-align: left;
+  text-align: center;
 }
-#root #app #home #home-gradient #home-txt a,
-#root #app #home #home-gradient #home-txt a:hover a:visited {
+#root #app #home #home-gradient #home-txt h1 {
+  font-size: 36px;
+}
+#root #app #home #home-gradient #home-txt h2 {
+  font-size: 24px;
+}
+#root #app #home #home-gradient #home-txt #viewportfolio {
+  margin-top: 24px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #app #home #home-gradient #home-txt #viewportfolio #viewportfoliobtn,
+#root #app #home #home-gradient #home-txt #viewportfolio #viewportfoliobtn:visited,
+#root #app #home #home-gradient #home-txt #viewportfolio #viewportfoliobtn:hover {
   color: white;
+}
+#root #app #home #home-gradient #home-txt #viewportfolio #viewportfoliobtn {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 4px;
+  transition: background 0.25s;
+}
+#root #app #home #home-gradient #home-txt #viewportfolio #viewportfoliobtn:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 750px) {
   #root #app #home #home-gradient #home-txt {
@@ -204,44 +189,51 @@ body::-webkit-scrollbar {
   }
 }
 #root #app #portfolio {
-  padding: 10px;
+  width: 100%;
+}
+#root #app #portfolio h1 {
+  font-size: 32px;
+  margin: 24px 0;
   text-align: center;
 }
 #root #app #portfolio #project-container {
-  background: blue;
   display: grid;
-  grid-template-columns: 100%;
-  grid-auto-rows: 200px;
-  padding: 10px;
+  grid-template-columns: 1fr;
+  grid-row-gap: 24px;
+  grid-column-gap: 24px;
 }
 #root #app #portfolio #project-container .project {
-  background: pink;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#root #app #portfolio #project-container .project .projectimg {
   height: 184px;
-  width: 184px;
   margin: 0 auto;
 }
-@media (min-width: 450px) {
-  #root #app #portfolio #project-container {
-    grid-template-columns: 50% 50%;
-  }
+#root #app #portfolio #project-container .project .testimonial-container {
+  text-align: center;
+}
+#root #app #portfolio #project-container .project .testimonial-container .testimonial {
+  font-style: italic;
 }
 @media (min-width: 600px) {
   #root #app #portfolio #project-container {
-    grid-auto-rows: 275px;
-  }
-  #root #app #portfolio #project-container .project {
-    height: 256px;
-    width: 256px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 900px) {
   #root #app #portfolio #project-container {
-    grid-template-columns: 33.3% 33.4% 33.3%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 #root #app #about {
   padding: 10px;
   text-align: center;
+  width: 100%;
 }
 #root #app #about #chad-container {
   background: blue;
@@ -269,6 +261,7 @@ body::-webkit-scrollbar {
 #root #app #contact {
   padding: 10px;
   text-align: center;
+  width: 100%;
 }
 #root #app #contact #contact-form {
   display: grid;

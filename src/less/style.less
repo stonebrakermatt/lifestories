@@ -8,25 +8,16 @@
     width: 100%;
     
     #titlebar { 
-        height: 100%;
+        height: 96px;
         width: 100%;
     }
     #app {
-        display: none;
-    }
+        display: block;
 
-    @media @heights[300] and @widths[300] {
-        #titlebar { 
-            height: 96px;
-        }
-        #app {
-            display: block;
+        height: calc(100% - 96px);
+        width: 100%;
 
-            height: calc(100% - 96px);
-            width: 100%;
-
-            overflow-y: scroll;
-        }
+        overflow-y: scroll;
     }
 
     @import "titlebar";
