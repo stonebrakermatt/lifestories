@@ -196,13 +196,18 @@ body::-webkit-scrollbar {
   margin: 24px 0;
   text-align: center;
 }
-#root #app #portfolio #project-container {
+#root #app #portfolio h2 {
+  font-size: 24px;
+  margin: 12px 0px;
+  text-align: center;
+}
+#root #app #portfolio .project-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 24px;
   grid-column-gap: 24px;
 }
-#root #app #portfolio #project-container .project {
+#root #app #portfolio .project-container .project {
   height: 100%;
   width: 100%;
   display: flex;
@@ -210,23 +215,23 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
 }
-#root #app #portfolio #project-container .project .projectimg {
+#root #app #portfolio .project-container .project .projectimg {
   height: 184px;
   margin: 0 auto;
 }
-#root #app #portfolio #project-container .project .testimonial-container {
+#root #app #portfolio .project-container .project .testimonial-container {
   text-align: center;
 }
-#root #app #portfolio #project-container .project .testimonial-container .testimonial {
+#root #app #portfolio .project-container .project .testimonial-container .testimonial {
   font-style: italic;
 }
 @media (min-width: 600px) {
-  #root #app #portfolio #project-container {
+  #root #app #portfolio .project-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 900px) {
-  #root #app #portfolio #project-container {
+  #root #app #portfolio .project-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
