@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default class AboutPage extends React.Component {
+export default class About extends React.Component {
     render() {
         return (
             <section id="about">
-                <p>About Section</p>
+                <h1>About Chad</h1>
                 <div id="chad-container">
-                    <div id="chad-img">Picture of Chad</div>
+                    <img id="chad-img" src="images/chadbio.jpeg"/>
                     <div id="chad-txt">
                         About Chad<br/><br/>
                         Some Information<br/><br/>
