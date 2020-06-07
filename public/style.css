@@ -152,6 +152,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   justify-content: center;
   text-align: left;
+  padding-left: 64px;
 }
 #root #app #home #home-gradient #home-txt h1 {
   font-size: 36px;
@@ -187,6 +188,12 @@ body::-webkit-scrollbar {
     width: 50%;
     position: relative;
     left: 50%;
+    padding-left: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #root #app #home #home-gradient #home-txt {
+    padding-left: 256px;
   }
 }
 #root #app #portfolio {
