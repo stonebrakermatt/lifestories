@@ -46,16 +46,11 @@ body::-webkit-scrollbar {
 /* fonts.less - custom fonts */
 /*****************************/
 @font-face {
-  font-family: Aaargh;
-  src: url('../fonts/aaargh.ttf');
+  font-family: Carrois;
+  src: url('../fonts/carrois.ttf');
 }
-@font-face {
-  font-family: Codec;
-  src: url('../fonts/codec.ttf');
-}
-@font-face {
-  font-family: Tutor;
-  src: url('../fonts/tutor.ttf');
+html {
+  font-family: Carrois;
 }
 #root {
   height: 100%;
@@ -209,6 +204,26 @@ body::-webkit-scrollbar {
   margin: 12px 0px;
   text-align: center;
 }
+#root #app #portfolio #portfolio-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 96px;
+  width: 100%;
+}
+#root #app #portfolio #portfolio-nav a {
+  padding: 0 0 12px 0;
+}
+@media (min-width: 600px) {
+  #root #app #portfolio #portfolio-nav {
+    flex-direction: row;
+    height: 24px;
+  }
+  #root #app #portfolio #portfolio-nav a {
+    padding: 0 12px 0 0;
+  }
+}
 #root #app #portfolio .project-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -223,7 +238,7 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 #root #app #portfolio .project-container .project .projectimg {
-  height: 184px;
+  height: 240px;
   margin: 0 auto;
 }
 #root #app #portfolio .project-container .project .testimonial-container {
@@ -231,13 +246,14 @@ body::-webkit-scrollbar {
 }
 #root #app #portfolio .project-container .project .testimonial-container .testimonial {
   font-style: italic;
+  padding: 12px;
 }
-@media (min-width: 600px) {
+@media (min-width: 750px) {
   #root #app #portfolio .project-container {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   #root #app #portfolio .project-container {
     grid-template-columns: 1fr 1fr 1fr;
   }

@@ -14,6 +14,25 @@
         text-align: center;
     }
 
+    #portfolio-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 96px;
+        width: 100%;
+        a {
+            padding: 0 0 12px 0;
+        }
+        @media @widths[600] {
+            a {
+                padding: 0 12px 0 0;
+            }
+            flex-direction: row;
+            height: 24px;
+        }
+    }
+
     .project-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -28,7 +47,7 @@
             justify-content: center;
             align-items: center;
             .projectimg {
-                height: 184px;
+                height: 240px;
                 margin: 0 auto;
             }
 
@@ -36,15 +55,16 @@
                 text-align: center;
                 .testimonial {
                     font-style: italic;
+                    padding: 12px;
                 }
             }
 
         }
-        
-        @media @widths[600] {
+
+        @media @widths[750] {
             grid-template-columns: 1fr 1fr;
         }
-        @media @widths[900] {
+        @media @widths[1200] {
             grid-template-columns: 1fr 1fr 1fr;
         }
     }

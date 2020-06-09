@@ -7,18 +7,21 @@ export default class PortfolioItem extends React.Component {
     render() {
         const imgsrc = "images/portfolio/" + this.props.imgpath
         return (
-            this.props.testimonial && this.props.testimonialBy ?
-                <div className="project">
-                    <img className="projectimg" src={imgsrc}/>
-                    <div className="testimonial-container">
-                        <p className="testimonial">{this.props.testimonial}</p> 
-                        <p className="testimonial-client">-{this.props.testimonialBy}</p>
+            this.props.display == this.props.type || this.props.display == 3 ?
+                this.props.testimonial && this.props.testimonialBy ?
+                    <div className="project">
+                        <img className="projectimg" src={imgsrc}/>
+                        <div className="testimonial-container">
+                            <p className="testimonial">{this.props.testimonial}</p> 
+                            <p className="testimonial-client">-{this.props.testimonialBy}</p>
+                        </div>
                     </div>
-                </div>
+                :
+                    <div className="project">
+                        <img className="projectimg" src={imgsrc}/>
+                    </div>
             :
-                <div className="project">
-                    <img className="projectimg" src={imgsrc}/>
-                </div>
+                null
         )
     }
 }
