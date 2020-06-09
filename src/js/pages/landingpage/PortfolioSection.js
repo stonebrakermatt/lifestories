@@ -2,7 +2,7 @@ import React from 'react'
 import PortfolioData from './PortfolioData'
 import PortfolioItem from './PortfolioItem'
 
-export default class Portfolio extends React.Component {
+export default class PortfolioSection extends React.Component {
     constructor(props) {
         super(props)
         this.state = {

@@ -1,18 +1,18 @@
 import React from 'react'
 
-import Home from './landingpage/Home'
-import Portfolio from './landingpage/Portfolio'
-import About from './landingpage/About'
-import Contact from './landingpage/Contact'
+import HomeSection from './landingpage/HomeSection'
+import PortfolioSection from './landingpage/PortfolioSection'
+import AboutSection from './landingpage/AboutSection'
+import ContactSection from './landingpage/ContactSection'
 
 export default class LandingPage extends React.Component {
     render() {
         return (
             <div id="app">
-                <Home/>
-                <Portfolio/>
-                <About/>
-                <Contact/>
+                <HomeSection/>
+                <PortfolioSection/>
+                <AboutSection/>
+                <ContactSection/>
             </div>
         )
     }

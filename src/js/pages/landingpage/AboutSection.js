@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class About extends React.Component {
+export default class AboutSection extends React.Component {
     render() {
         return (
             <section id="about">

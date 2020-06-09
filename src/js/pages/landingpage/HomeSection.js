@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class Home extends React.Component {
+export default class HomeSection extends React.Component {
     render() {
         return (
             <section id="home">

@@ -1,4 +1,4 @@
-// portfoliopage.less - custom styles
+// portfoliosection.less - custom styles
 
 #portfolio {
     width: 100%;
@@ -19,11 +19,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 96px;
+        height: 72px;
         width: 100%;
-        a {
-            padding: 0 0 12px 0;
-        }
         @media @widths[600] {
             a {
                 padding: 0 12px 0 0;
@@ -47,8 +44,11 @@
             justify-content: center;
             align-items: center;
             .projectimg {
-                height: 240px;
+                height: 184px;
                 margin: 0 auto;
+                @media @widths[450] {
+                    height: 240px;
+                }
             }
 
             .testimonial-container {

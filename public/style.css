@@ -209,11 +209,8 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 96px;
+  height: 72px;
   width: 100%;
-}
-#root #app #portfolio #portfolio-nav a {
-  padding: 0 0 12px 0;
 }
 @media (min-width: 600px) {
   #root #app #portfolio #portfolio-nav {
@@ -238,8 +235,13 @@ html {
   align-items: center;
 }
 #root #app #portfolio .project-container .project .projectimg {
-  height: 240px;
+  height: 184px;
   margin: 0 auto;
+}
+@media (min-width: 450px) {
+  #root #app #portfolio .project-container .project .projectimg {
+    height: 240px;
+  }
 }
 #root #app #portfolio .project-container .project .testimonial-container {
   text-align: center;

@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default class Contact extends React.Component {
+export default class ContactSection extends React.Component {
     render() {
         return (
             <section id="contact">
-                <p>Contact Section</p>
+                <h1>Contact Us</h1>
                 <form id="contact-form">
                     <label id="fname-label" htmlFor="fname">First name:</label>
                     <input name="fname" id="fname" type="text" placeholder="First Name"/>
