@@ -14,6 +14,21 @@
         text-align: center;
     }
 
+    .showmorelessbtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px 0px;
+        a {
+            cursor: pointer;
+            font-size: 24px;
+            transition: color 0.5s;
+        }
+        a:hover {
+            color: #137FC8;
+        }
+    }
+
     #portfolio-nav {
         display: flex;
         flex-direction: column;
@@ -26,7 +41,7 @@
             transition: color 0.5s;
         }
         a.portnav-selected, a:hover {
-            color: #137FC8
+            color: #137FC8;
         }
         @media @widths[600] {
             a {

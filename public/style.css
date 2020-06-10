@@ -221,6 +221,20 @@ html {
   margin: 12px 0px;
   text-align: center;
 }
+#root #app #portfolio .showmorelessbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0px;
+}
+#root #app #portfolio .showmorelessbtn a {
+  cursor: pointer;
+  font-size: 24px;
+  transition: color 0.5s;
+}
+#root #app #portfolio .showmorelessbtn a:hover {
+  color: #137FC8;
+}
 #root #app #portfolio #portfolio-nav {
   display: flex;
   flex-direction: column;
