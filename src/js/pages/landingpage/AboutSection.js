@@ -4,12 +4,12 @@ export default class AboutSection extends React.Component {
     render() {
         return (
             <section id="about">
-                <h1 class="section-title">About Chad</h1>
+                <h1 className="section-title">About Chad</h1>
                 <div id="chad-container">
                     <img id="chad-img" src="images/chadbio.jpeg"/>
                     <div id="chad-txt">
                         <p>
-                            <strong><emph>Pass the truth to the next generation. Teach them early what we learn late.</emph></strong>
+                            <strong><em>Pass the truth to the next generation. Teach them early what we learn late.</em></strong>
                         </p>
                         <p>
                             When you are passionate about something, it shows—in performance, in commitment, in quality. <strong>Our passion is to preserve our clients’ stories in book from.</strong> Through every step of the process... moment by moment, page by page... this passion leads to superior results.
@@ -21,7 +21,7 @@ export default class AboutSection extends React.Component {
                             These are more than books; they are bridges between generations, between time and place, between different groups of people. <strong>There is no better way to honor your legacy, share your memories, and create an exceptional story</strong> that will be cherished by family, colleagues and friends.
                         </p>
                         <p>
-                            As Ralph Waldo Emerson said: <emph>There is properly no history, only biography.</emph>
+                            As Ralph Waldo Emerson said: <em>There is properly no history, only biography.</em>
                         </p>
                         <p>
                             And that’s our specialty.

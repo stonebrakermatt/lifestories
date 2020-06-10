@@ -229,6 +229,14 @@ html {
   height: 72px;
   width: 100%;
 }
+#root #app #portfolio #portfolio-nav a {
+  cursor: pointer;
+  transition: color 0.5s;
+}
+#root #app #portfolio #portfolio-nav a.portnav-selected,
+#root #app #portfolio #portfolio-nav a:hover {
+  color: #137FC8;
+}
 @media (min-width: 600px) {
   #root #app #portfolio #portfolio-nav {
     flex-direction: row;
