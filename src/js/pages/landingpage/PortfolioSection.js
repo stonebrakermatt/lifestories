@@ -10,14 +10,14 @@ export default class PortfolioSection extends React.Component {
             display: 3
         }
     }
-    render() { 
-        const portfolioItems = this.state.data.map(item => 
+    render() {
+        const portfolioItems = this.state.data.map(item =>
             item.hasOwnProperty('testimonial') && item.hasOwnProperty('testimonialBy') ?
                 <PortfolioItem
                     display={this.state.display}
-                    type={item.type} 
+                    type={item.type}
                     imgpath={item.imgpath}
-                    key={item.imgpath} 
+                    key={item.imgpath}
                     testimonial={item.testimonial}
                     testimonialBy={item.testimonialBy}
                 />
@@ -33,7 +33,7 @@ export default class PortfolioSection extends React.Component {
         return (
             <section id="portfolio">
 
-                <h1>Testimonials / Portfolio</h1>
+                <h1 class="section-title">Testimonials / Portfolio</h1>
                 <nav id="portfolio-nav">
                     <a>Show All</a>
                     <a>Personal Memoirs</a>

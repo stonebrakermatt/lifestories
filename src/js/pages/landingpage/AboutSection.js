@@ -4,7 +4,7 @@ export default class AboutSection extends React.Component {
     render() {
         return (
             <section id="about">
-                <h1>About Chad</h1>
+                <h1 class="section-title">About Chad</h1>
                 <div id="chad-container">
                     <img id="chad-img" src="images/chadbio.jpeg"/>
                     <div id="chad-txt">

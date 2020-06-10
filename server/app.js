@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // serve static resources
-app.use(express.static('/home/matt/repositories/lifestories/public'))
+app.use(express.static('/Users/stevenshirley/developments/lifestories/public'))
 
 // express router config in separate file
 app.use('/', router)
@@ -26,5 +26,5 @@ app.use('/', router)
 const addr = '0.0.0.0', port = 3000
 app.listen(port, addr, () => {
     console.log(`Running dev server:`)
-    console.log(`Listening on ${addr}:${port}`) 
+    console.log(`Listening on ${addr}:${port}`)
 })

@@ -4,7 +4,7 @@ export default class ContactSection extends React.Component {
     render() {
         return (
             <section id="contact">
-                <h1>Contact Us</h1>
+                <h1 class="section-title">Contact Us</h1>
                 <form id="contact-form">
                     <label id="fname-label" htmlFor="fname">First name:</label>
                     <input name="fname" id="fname" type="text" placeholder="First Name"/>
