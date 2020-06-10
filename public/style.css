@@ -294,18 +294,29 @@ html {
 #root #app #about #chad-container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 256px auto;
+  grid-template-rows: 356px auto;
 }
 #root #app #about #chad-container #chad-img {
   background: pink;
-  height: 256px;
+  height: 356px;
   text-align: center;
   margin: auto;
+}
+@media (min-width: 900px) {
+  #root #app #about #chad-container #chad-img {
+    height: 512px;
+  }
 }
 #root #app #about #chad-container #chad-txt {
   width: 100%;
 }
-@media (min-width: 450px) {
+#root #app #about #chad-container #chad-txt p {
+  margin-top: 24px;
+}
+#root #app #about #chad-container #chad-txt p:last-child {
+  margin-top: 0;
+}
+@media (min-width: 900px) {
   #root #app #about #chad-container {
     grid-template-columns: 50% 50%;
     grid-template-rows: unset;

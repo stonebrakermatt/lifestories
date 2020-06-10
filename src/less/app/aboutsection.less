@@ -18,17 +18,26 @@
     #chad-container {
         display: grid; 
         grid-template-columns: 100%;
-        grid-template-rows: 256px auto;
+        grid-template-rows: 356px auto;
         #chad-img {
             background: pink;
-            height: 256px;
+            height: 356px;
             text-align: center;
             margin: auto;
+            @media @widths[900] {
+                height: 512px;
+            }
         }
         #chad-txt {
             width: 100%;
+            p {
+                margin-top: 24px;
+            }
+            p:last-child {
+                margin-top: 0;
+            }
         }
-        @media @widths[450] {
+        @media @widths[900] {
             grid-template-columns: 50% 50%;
             grid-template-rows: unset;
         }
