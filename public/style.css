@@ -323,7 +323,8 @@ html {
   }
 }
 #root #app #contact {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
   width: 100%;
 }
@@ -358,4 +359,8 @@ html {
   #root #app #contact #contact-form #submit {
     grid-column-end: span 4;
   }
+}
+#root .section-title {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
