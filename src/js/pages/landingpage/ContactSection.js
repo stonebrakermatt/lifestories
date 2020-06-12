@@ -10,8 +10,10 @@ export default class ContactSection extends React.Component {
                     <input name="fname" id="fname" type="text" placeholder="First Name"/>
                     <label id="lname-label" htmlFor="lname">Last name:</label>
                     <input name="lname" id="lname" type="text" placeholder="Last Name"/>
-                    <label id="subject-label" htmlFor="subject">Subject:</label>
-                    <input name="subject" id="subject" type="text" placeholder="First Name"/>
+                    <label id="email-label" htmlFor="email">Email:</label>
+                    <input name="email" id="email" type="text" placeholder="Email"/>
+                    <label id="phone-label" htmlFor="phone">Phone:</label>
+                    <input name="phone" id="phone" type="text" placeholder="Phone"/>
                     <label id="request-label" htmlFor="request">Request:</label>
                     <textarea name="request" id="request" rows="10"></textarea>
                     <input id="submit" type="submit" value="Submit"/>

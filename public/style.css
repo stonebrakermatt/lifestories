@@ -391,7 +391,8 @@ html {
     grid-template-columns: 100px calc(50% - 118px) 100px calc(50% - 118px);
     grid-template-rows: 50px 50px auto;
   }
-  #root #app #contact #contact-form #subject,
+  #root #app #contact #contact-form #email,
+  #root #app #contact #contact-form #phone,
   #root #app #contact #contact-form #request {
     grid-column-end: span 3;
   }
