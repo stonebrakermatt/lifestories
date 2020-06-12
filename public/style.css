@@ -347,6 +347,7 @@ html {
   }
 }
 #root #app #contact {
+  background: #EEEEEE;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
@@ -383,6 +384,9 @@ html {
   #root #app #contact #contact-form #submit {
     grid-column-end: span 4;
   }
+}
+#root section {
+  margin-top: 48px;
 }
 #root .section-title {
   font-size: 32px;
