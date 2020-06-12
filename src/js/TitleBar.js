@@ -5,7 +5,7 @@ export default class TitleBar extends React.Component {
         return (
             <div id="titlebar">
                 <div id="logo-container">
-                    <img id="logo-img" src="/images/ls1500.png"/>
+                    <img id="logo-img" src="images/ls1500.png"/>
                     <div id="logo-contact">
                         <p id="logo-phone">214-288-2262</p>
                         <p id="logo-email">chad@lifestories.com</p>
