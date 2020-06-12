@@ -211,11 +211,6 @@ html {
 #root #app #portfolio {
   width: 100%;
 }
-#root #app #portfolio h1 {
-  font-size: 32px;
-  margin: 24px 0;
-  text-align: center;
-}
 #root #app #portfolio h2 {
   font-size: 24px;
   margin: 12px 0px;
@@ -315,11 +310,6 @@ html {
   padding: 10px;
   width: 100%;
 }
-#root #app #about h1 {
-  font-size: 32px;
-  margin: 24px 0;
-  text-align: center;
-}
 #root #app #about h2 {
   font-size: 24px;
   margin: 12px 0;
@@ -395,6 +385,9 @@ html {
   }
 }
 #root .section-title {
+  font-size: 32px;
+  margin: 24px 0;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
