@@ -18,8 +18,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 24px 0px;
+        padding: 24px 0px;
         a {
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 4px;
             cursor: pointer;
             font-size: 24px;
             transition: color 0.5s;
@@ -52,6 +55,10 @@
         }
     }
 
+    h2 {
+        padding: 96px 0 20px 0;
+        margin: 0;
+    }
     .project-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -80,8 +87,7 @@
                     padding: 12px;
                 }
             }
-
-        }
+        } 
 
         @media @widths[900] {
             grid-template-columns: 1fr 1fr;
@@ -89,5 +95,10 @@
         @media @widths[1500] {
             grid-template-columns: 1fr 1fr 1fr;
         }
+    }
+    h2:nth-child(11n+6),
+    .project-container:nth-child(11n+7), 
+    .showmorelessbtn:nth-child(11n+8) {
+        background: #EEEEEE;
     }
 }

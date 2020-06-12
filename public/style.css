@@ -225,9 +225,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 24px 0px;
+  padding: 24px 0px;
 }
 #root #app #portfolio .showmorelessbtn a {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 24px;
   transition: color 0.5s;
@@ -259,6 +262,10 @@ html {
   #root #app #portfolio #portfolio-nav a {
     padding: 0 12px 0 0;
   }
+}
+#root #app #portfolio h2 {
+  padding: 96px 0 20px 0;
+  margin: 0;
 }
 #root #app #portfolio .project-container {
   display: grid;
@@ -298,6 +305,11 @@ html {
   #root #app #portfolio .project-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+#root #app #portfolio h2:nth-child(11n+6),
+#root #app #portfolio .project-container:nth-child(11n+7),
+#root #app #portfolio .showmorelessbtn:nth-child(11n+8) {
+  background: #EEEEEE;
 }
 #root #app #about {
   padding: 10px;
