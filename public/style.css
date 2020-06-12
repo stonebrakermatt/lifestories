@@ -400,6 +400,9 @@ html {
 #root section {
   margin-top: 48px;
 }
+#root section:first-child {
+  margin-top: 0;
+}
 #root .section-title {
   font-size: 32px;
   margin: 24px 0;
