@@ -63,6 +63,11 @@ const data = [
         imgpath: "walterjohnson.jpeg"
     }, {
         type: 0,
+        testimonial: "Our family is so thankful that we found you and appreciate all your hard work to produce a wonderful book that we are so proud of.",
+        testimonialBy: "Herbert Williams (?)",
+        imgpath: "herbertwilliams.jpeg"
+    }, {
+        type: 0,
         imgpath: "steffenpalko.jpeg"
     }, {
         type: 0,
@@ -97,6 +102,9 @@ const data = [
     }, {
         type: 0,
         imgpath: "janeweatherford.jpeg"
+    }, {
+        type: 0,
+        imgpath: "bobtaylor.jpeg"
     }, {
         type: 1,
         testimonial: "Just received the book, The Company History of Johnsonville. We absolutely love it. It’s truly amazing.",
@@ -134,15 +142,7 @@ const data = [
         type: 1,
         imgpath: "stripes.jpeg"
     }, {
-        type: 2,
-        testimonial: "Our family is so thankful that we found you and appreciate all your hard work to produce a wonderful book that we are so proud of.",
-        testimonialBy: "Herbert Williams (?)",
-        imgpath: "herbertwilliams.jpeg"
-    }, {
-        type: 2,
-        imgpath: "bobtaylor.jpeg"
-    }, {
-        type: 2,
+        type: 1,
         imgpath: "twopotatoes.jpeg"
     }, 
 ]

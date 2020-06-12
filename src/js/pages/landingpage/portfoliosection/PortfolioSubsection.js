@@ -54,10 +54,7 @@ export default class PortfolioSubsection extends React.Component {
             this.props.display == 1 ?
                 "Company Histories"
             :
-                this.props.display == 2 ?
-                    "Family Histories"
-                :
-                    "Error: Unknown Category"
+                "Error: Unknown Category"
         const subsectionClass = this.state.condensed ? "project-container condensed" : "project-container"
     
         const linkText = this.state.condensed ? "Show More" : "Show Less"
