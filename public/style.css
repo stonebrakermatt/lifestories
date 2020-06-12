@@ -405,6 +405,9 @@ html {
 #root section:first-child {
   margin-top: 0;
 }
+#root section:last-child {
+  padding-top: 48px;
+}
 #root .section-title {
   font-size: 32px;
   margin: 24px 0;
