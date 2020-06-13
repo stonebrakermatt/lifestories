@@ -346,6 +346,48 @@ html {
     grid-template-rows: unset;
   }
 }
+#root #app #about #team-container {
+  padding-top: 48px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 24px;
+}
+@media (min-width: 450px) {
+  #root #app #about #team-container {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (min-width: 750px) {
+  #root #app #about #team-container {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+#root #app #about #team-container .team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#root #app #about #team-container .team-member img {
+  height: 200px;
+  width: 200px;
+}
+@media (min-width: 450px) {
+  #root #app #about #team-container .team-member img {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  #root #app #about #team-container .team-member img {
+    height: 200px;
+    width: 200px;
+  }
+}
+#root #app #about #team-container .team-member h3,
+#root #app #about #team-container .team-member p {
+  text-align: center;
+}
 #root #app #contact {
   background: #EEEEEE;
   padding-left: 10px;

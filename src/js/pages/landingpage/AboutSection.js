@@ -4,7 +4,7 @@ export default class AboutSection extends React.Component {
     render() {
         return (
             <section id="about">
-                <h1 className="section-title">About Chad</h1>
+                <h1 className="section-title">About Us</h1>
                 <div id="chad-container">
                     <img id="chad-img" src="images/chadbio.jpeg"/>
                     <div id="chad-txt">
@@ -35,6 +35,48 @@ export default class AboutSection extends React.Component {
                         <p>
                             Dallas, Texas
                         </p>
+                    </div>
+                </div>
+                <div id="team-container">
+                    <div className="team-member">
+                        <img src="images/team/chad.jpeg"/>
+                        <h3>Chad Harbour, Founder</h3>
+                        <p>"A happy customer makes a happy team!"</p>
+                    </div>
+                    <div className="team-member">
+                        <img src="images/team/becky.jpeg"/>
+                        <h3>Becky</h3>
+                        <p>"Let's be organized and stay organized."</p>
+                    </div>
+                    <div className="team-member">
+                        <img src="images/team/tim.jpeg"/>
+                        <h3>Tim</h3>
+                        <p>"I'll make it shine like the stars!"</p>
+                    </div>
+                    <div className="team-member">
+                        <img src="images/team/mark.jpeg"/>
+                        <h3>Mark</h3>
+                        <p>"Expanding the digital footprint is where it's at."</p>
+                    </div>
+                    <div className="team-member">
+                        <img src="images/team/david.jpeg"/>
+                        <h3>David</h3>
+                        <p>"Let's pretty this up."</p>
+                    </div>
+                    <div className="team-member">
+                        <img src="images/team/steven.jpeg"/>
+                        <h3>Steven</h3>
+                        <p>"We can do that."</p>
+                    </div>
+                    <div className="team-member">
+                        <img src="images/team/kyle.jpeg"/>
+                        <h3>Kyle</h3>
+                        <p>"Lights! Camera! Action!"</p>
+                    </div>
+                    <div className="team-member">
+                        <img src="images/team/holly.jpeg"/>
+                        <h3>Holly</h3>
+                        <p>"Hold that! Just one more..."</p>
                     </div>
                 </div>
             </section>

@@ -37,4 +37,37 @@
             grid-template-rows: unset;
         }
     }
+    #team-container {
+        padding-top: 48px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 24px;
+        @media @widths[450] {
+            grid-template-columns: 50% 50%;
+        }
+        @media @widths[750] {
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 200px;
+                width: 200px;
+                @media @widths[450] {
+                    height: 150px;
+                    width: 150px;
+                }
+                @media @widths[1200] {
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+            h3, p {
+                text-align: center;
+            }
+        }
+    }
 }
