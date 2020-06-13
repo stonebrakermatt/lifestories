@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
 /*****************************/
 @font-face {
   font-family: Carrois;
-  src: url('fonts/carrois.ttf');
+  src: url('../fonts/carrois.ttf');
 }
 html {
   font-family: Carrois;
@@ -140,6 +140,9 @@ html {
   #root #titlebar #nav a {
     font-size: 22px;
   }
+}
+#root #app {
+  scroll-behavior: smooth;
 }
 #root #app #home {
   text-align: center;
