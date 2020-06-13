@@ -141,6 +141,9 @@ html {
     font-size: 22px;
   }
 }
+#root #app {
+  scroll-behavior: smooth;
+}
 #root #app #home {
   text-align: center;
   height: 100%;
