@@ -1,5 +1,5 @@
 import React from 'react'
-import LandingPage from './pages/LandingPage'
+import App from './App'
 import TitleBar from './TitleBar'
 
 export default class Grid extends React.Component {
@@ -7,7 +7,7 @@ export default class Grid extends React.Component {
         return (
             <React.Fragment>
                 <TitleBar/>
-                <LandingPage/>
+                <App/>
             </React.Fragment>
         )
     }

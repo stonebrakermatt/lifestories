@@ -11,18 +11,18 @@
     #home-gradient {
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.33);
         color: white;
         
         #home-txt {
-            height: 100%;
+            height: 50%;
             padding: 32px;
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: left;
-            padding-left: 64px;
+            padding-left: 12.5%;
+            transition: padding-left 0.5s;
             h1 {
                 font-size: 36px;
             }
@@ -57,16 +57,8 @@
                     background: rgba(0, 0, 0, 0.5);
                 }
             }
-
-            @media @widths[750] {
-                height: 100%;
-                width: 50%;
-                position: relative;
-                left: 50%;
-                padding-left: 0px;
-            }
-            @media @widths[1200] {
-                padding-left: 256px;
+            @media @widths[600] {
+                padding-left: 25%;
             }
         }
     }
