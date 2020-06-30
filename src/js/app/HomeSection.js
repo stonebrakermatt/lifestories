@@ -14,7 +14,7 @@ export default class HomeSection extends React.Component {
                         id="home-txt" 
                         style={{position: 'relative', top: `calc(25% + ${homeTxtTop}px)`}}
                     >
-                        <h1>Life Stories</h1>
+                        <h1>LifeStories</h1>
                         <h2>Capturing Your Legacy</h2> 
                         <div id="viewportfolio">
                             <a id="viewportfoliobtn" href="#portfolio">

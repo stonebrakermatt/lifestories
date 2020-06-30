@@ -40,7 +40,7 @@ export default class AboutSection extends React.Component {
                 <div id="team-container">
                     <div className="team-member">
                         <img src="images/team/chad.jpeg"/>
-                        <h3>Chad Harbour, Founder</h3>
+                        <h3>Chad, Founder</h3>
                         <p>"A happy customer makes a happy team!"</p>
                     </div>
                     <div className="team-member">
@@ -61,7 +61,7 @@ export default class AboutSection extends React.Component {
                     <div className="team-member">
                         <img src="images/team/david.jpeg"/>
                         <h3>David</h3>
-                        <p>"Let's pretty this up."</p>
+                        <p>"Your story deserves great design and layout!"</p>
                     </div>
                     <div className="team-member">
                         <img src="images/team/steven.jpeg"/>

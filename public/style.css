@@ -46,11 +46,23 @@ body::-webkit-scrollbar {
 /* fonts.less - custom fonts */
 /*****************************/
 @font-face {
-  font-family: Carrois;
-  src: url('../fonts/carrois.ttf');
+  font-family: RalewayBold;
+  src: url('../fonts/ralewaybold.ttf');
+}
+@font-face {
+  font-family: AlegreyaBoldItalic;
+  src: url('../fonts/alegreyabolditalic.ttf');
 }
 html {
-  font-family: Carrois;
+  font-family: AlegreyaBoldItalic;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: RalewayBold;
 }
 #root {
   height: 100%;
@@ -83,7 +95,7 @@ html {
 }
 #root #titlebar #logo-container img#logo-img {
   height: 72px;
-  width: 72px;
+  width: 63px;
   margin: unset;
   margin-left: auto;
 }
@@ -95,10 +107,11 @@ html {
   align-items: start;
   color: #818285;
   margin-right: auto;
-  width: calc(100% - 72px);
+  width: calc(100% - 63px);
   height: 100%;
 }
 #root #titlebar #logo-container #logo-contact p {
+  font-family: RalewayBold;
   font-size: 20px;
 }
 #root #titlebar #logo-container #logo-smallscreen-err {
@@ -120,6 +133,7 @@ html {
 #root #titlebar #nav a {
   display: inline-block;
   margin: auto 12px;
+  font-family: RalewayBold;
   font-size: 18px;
 }
 @media (min-width: 750px) {
@@ -170,9 +184,12 @@ html {
 }
 #root #app #home #home-gradient #home-txt h1 {
   font-size: 36px;
+  font-family: RalewayBold;
+  font-weight: 500;
 }
 #root #app #home #home-gradient #home-txt h2 {
   font-size: 24px;
+  font-family: AlegreyaBoldItalic;
 }
 #root #app #home #home-gradient #home-txt #viewportfolio {
   margin-top: 8px;
@@ -187,8 +204,10 @@ html {
   color: white;
 }
 #root #app #home #home-gradient #home-txt #viewportfolio #viewportfoliobtn {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 24px;
+  font-family: RalewayBold;
+  font-weight: 500;
+  text-transform: uppercase;
   background: rgba(0, 0, 0, 0);
   border-radius: 4px;
   border: 1px solid white;
@@ -197,7 +216,7 @@ html {
 }
 @media (min-width: 600px) {
   #root #app #home #home-gradient #home-txt #viewportfolio #viewportfoliobtn {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 #root #app #home #home-gradient #home-txt #viewportfolio #viewportfoliobtn:hover {
@@ -212,6 +231,7 @@ html {
   width: 100%;
 }
 #root #app #portfolio h2 {
+  color: #137FC8;
   font-size: 32px;
   margin: 12px 0px;
   text-align: center;
@@ -291,6 +311,10 @@ html {
   font-style: italic;
   padding: 12px 36px;
 }
+#root #app #portfolio .project-container .project .testimonial-container .testimonial-client {
+  font-family: RalewayBold;
+  font-weight: 500;
+}
 @media (min-width: 900px) {
   #root #app #portfolio .project-container {
     grid-template-columns: 1fr 1fr;
@@ -363,12 +387,21 @@ html {
   }
 }
 #root #app #about #team-container .team-member {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 200px 20px auto;
+}
+@media (min-width: 450px) {
+  #root #app #about #team-container .team-member {
+    grid-template-rows: 150px 20px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #root #app #about #team-container .team-member {
+    grid-template-rows: 200px 20px auto;
+  }
 }
 #root #app #about #team-container .team-member img {
+  margin: 0 auto;
   height: 200px;
   width: 200px;
 }
@@ -387,6 +420,12 @@ html {
 #root #app #about #team-container .team-member h3,
 #root #app #about #team-container .team-member p {
   text-align: center;
+}
+#root #app #about #team-container .team-member h3 {
+  color: #137FC8;
+}
+#root #app #about #team-container .team-member p {
+  color: #818285;
 }
 #root #app #contact {
   background: #EEEEEE;
@@ -407,6 +446,9 @@ html {
 }
 #root #app #contact #contact-form label {
   line-height: 3;
+}
+#root #app #contact #contact-form input {
+  padding: 10px;
 }
 #root #app #contact #contact-form #request {
   padding: 10px;
@@ -452,6 +494,7 @@ html {
   padding-top: 48px;
 }
 #root .section-title {
+  color: #137FC8;
   font-size: 32px;
   margin: 24px 0;
   padding-top: 20px;

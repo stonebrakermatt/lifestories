@@ -12,7 +12,7 @@ export default class PortfolioItem extends React.Component {
                     <img className="projectimg" src={imgsrc}/>
                     <div className="testimonial-container">
                         <p className="testimonial">{this.props.testimonial}</p> 
-                        <p className="testimonial-client">-{this.props.testimonialBy}</p>
+                        <p className="testimonial-client">—{this.props.testimonialBy}</p>
                     </div>
                 </div>
             :

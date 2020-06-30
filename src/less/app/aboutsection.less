@@ -49,11 +49,16 @@
             grid-template-columns: 25% 25% 25% 25%;
         }
         .team-member {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            display: grid;
+            grid-template-rows: 200px 20px auto;
+            @media @widths[450] {
+                grid-template-rows: 150px 20px auto;
+            }
+            @media @widths[1200] {
+                grid-template-rows: 200px 20px auto;
+            }
             img {
+                margin: 0 auto;
                 height: 200px;
                 width: 200px;
                 @media @widths[450] {
@@ -67,6 +72,12 @@
             }
             h3, p {
                 text-align: center;
+            }
+            h3 {
+                color: #137FC8;
+            }
+            p {
+                color: #818285;
             }
         }
     }
