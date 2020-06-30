@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
 /*****************************/
 @font-face {
   font-family: Carrois;
-  src: url('fonts/carrois.ttf');
+  src: url('../fonts/carrois.ttf');
 }
 html {
   font-family: Carrois;
