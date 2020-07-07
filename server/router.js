@@ -8,7 +8,7 @@ const router = express.Router()
 
 // default to index and let react router work
 router.get('*', (req, res) => {
-    res.sendFile('/home/matt/repositories/lifestories/public/index.html')
+    res.sendFile('/Users/stevenshirley/developments/lifestories/public/index.html')
 })
 
 module.exports = router
