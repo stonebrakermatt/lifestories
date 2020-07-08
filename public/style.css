@@ -388,16 +388,16 @@ h6 {
 }
 #root #app #about #team-container .team-member {
   display: grid;
-  grid-template-rows: 200px 20px auto;
+  grid-template-rows: 200px 20px 20px auto;
 }
 @media (min-width: 450px) {
   #root #app #about #team-container .team-member {
-    grid-template-rows: 150px 20px auto;
+    grid-template-rows: 150px 20px 20px auto;
   }
 }
 @media (min-width: 1200px) {
   #root #app #about #team-container .team-member {
-    grid-template-rows: 200px 20px auto;
+    grid-template-rows: 200px 20px 20px auto;
   }
 }
 #root #app #about #team-container .team-member img {
@@ -418,10 +418,12 @@ h6 {
   }
 }
 #root #app #about #team-container .team-member h3,
+#root #app #about #team-container .team-member h4,
 #root #app #about #team-container .team-member p {
   text-align: center;
 }
-#root #app #about #team-container .team-member h3 {
+#root #app #about #team-container .team-member h3,
+#root #app #about #team-container .team-member h4 {
   color: #137FC8;
 }
 #root #app #about #team-container .team-member p {

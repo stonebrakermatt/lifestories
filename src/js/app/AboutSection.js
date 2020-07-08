@@ -40,42 +40,50 @@ export default class AboutSection extends React.Component {
                 <div id="team-container">
                     <div className="team-member">
                         <img src="images/team/chad.jpeg"/>
-                        <h3>Chad - Founder</h3>
+                        <h3>Chad</h3>
+                        <h4>Founder</h4>
                         <p>"A happy customer makes a happy team!"</p>
                     </div>
                     <div className="team-member">
                         <img src="images/team/becky.jpeg"/>
-                        <h3>Becky - Administration</h3>
+                        <h3>Becky</h3>
+                        <h4>Administration</h4>
                         <p>"Let's be organized and stay organized."</p>
                     </div>
                     <div className="team-member">
                         <img src="images/team/tim.jpeg"/>
-                        <h3>Tim - Chief Editor</h3>
+                        <h3>Tim</h3>
+                        <h4>Chief Editor</h4>
                         <p>"I'll make it shine like the stars!"</p>
                     </div>
                     <div className="team-member">
                         <img src="images/team/donr.jpg"/>
-                        <h3>Don - Genealogy</h3>
+                        <h3>Don</h3>
+                        <h4>Genealogy</h4>
                         <p>"Family trees are deep history."</p>
                     </div>
                     <div className="team-member">
                         <img src="images/team/david.jpeg"/>
-                        <h3>David - Covers, Graphics, and Layout</h3>
+                        <h3>David</h3>
+                        <h4>Graphics & Layout</h4>
                         <p>"Your story deserves great design and layout!"</p>
                     </div>
                     <div className="team-member">
                         <img src="images/team/steven.jpeg"/>
-                        <h3>Steven - Web Master</h3>
+                        <h3>Steven</h3>
+                        <h4>Web Master</h4>
                         <p>"It's all up and running."</p>
                     </div>
                     <div className="team-member">
                         <img src="images/team/kyle.jpeg"/>
-                        <h3>Kyle - Videography</h3>
+                        <h3>Kyle</h3>
+                        <h4>Videography</h4>
                         <p>"Lights! Camera! Action!"</p>
                     </div>
                     <div className="team-member">
                         <img src="images/team/suet.jpg"/>
-                        <h3>Sue - Digital Imaging</h3>
+                        <h3>Sue</h3>
+                        <h4>Digital Imaging</h4>
                         <p>"Visually creating wow!"</p>
                     </div>
                 </div>

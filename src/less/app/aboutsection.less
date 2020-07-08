@@ -11,7 +11,7 @@
     }
 
     #chad-container {
-        display: grid; 
+        display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 356px auto;
         #chad-img {
@@ -50,12 +50,12 @@
         }
         .team-member {
             display: grid;
-            grid-template-rows: 200px 20px auto;
+            grid-template-rows: 200px 20px 20px auto;
             @media @widths[450] {
-                grid-template-rows: 150px 20px auto;
+                grid-template-rows: 150px 20px 20px auto;
             }
             @media @widths[1200] {
-                grid-template-rows: 200px 20px auto;
+                grid-template-rows: 200px 20px 20px auto;
             }
             img {
                 margin: 0 auto;
@@ -70,10 +70,10 @@
                     width: 200px;
                 }
             }
-            h3, p {
+            h3, h4, p {
                 text-align: center;
             }
-            h3 {
+            h3, h4{
                 color: #137FC8;
             }
             p {
