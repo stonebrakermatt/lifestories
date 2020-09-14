@@ -2,7 +2,7 @@
 
 #portfolio {
     width: 100%;
-    
+
     h2 {
         color: #137FC8;
         font-size: 32px;
@@ -60,7 +60,7 @@
         grid-template-columns: 1fr;
         grid-row-gap: 24px;
         grid-column-gap: 24px;
-        
+
         .project {
             width: 100%;
 
@@ -77,6 +77,7 @@
             }
 
             .testimonial-container {
+              max-width: 350px;
                 text-align: center;
                 .testimonial {
                     font-style: italic;
@@ -87,7 +88,7 @@
                     font-weight: 500;
                 }
             }
-        } 
+        }
 
         @media @widths[900] {
             grid-template-columns: 1fr 1fr;
@@ -97,7 +98,7 @@
         }
     }
     h2:nth-child(11n+6),
-    .project-container:nth-child(11n+7), 
+    .project-container:nth-child(11n+7),
     .showmorelessbtn:nth-child(11n+8) {
         background: #EEEEEE;
     }

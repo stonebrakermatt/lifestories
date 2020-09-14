@@ -305,6 +305,7 @@ h6 {
   }
 }
 #root #app #portfolio .project-container .project .testimonial-container {
+  max-width: 350px;
   text-align: center;
 }
 #root #app #portfolio .project-container .project .testimonial-container .testimonial {
