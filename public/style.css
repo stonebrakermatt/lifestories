@@ -321,7 +321,7 @@ h6 {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
   #root #app #portfolio .project-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
