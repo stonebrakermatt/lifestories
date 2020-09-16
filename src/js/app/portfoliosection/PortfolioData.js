@@ -23,7 +23,7 @@ const data = [
     }, {
         type: 0,
         testimonial: "Your work was masterful. Bob and I are so pleased with our book!",
-        testimonialBy: "Genie Stine (?)",
+        testimonialBy: "Genie Stine",
         imgpath: "stine.jpeg"
     }, {
         type: 0,
@@ -52,7 +52,7 @@ const data = [
         imgpath: "marvinrush.jpeg"
     }, {
         type: 0,
-        testimonial: "I’m beyond thrilled. Your team does work of the highest quality.", 
+        testimonial: "I’m beyond thrilled. Your team does work of the highest quality.",
         testimonialBy: "Clifton Morris",
         imgpath: "cliftonmorris.jpeg"
     }, {
@@ -64,7 +64,7 @@ const data = [
     }, {
         type: 0,
         testimonial: "Our family is so thankful that we found you and appreciate all your hard work to produce a wonderful book that we are so proud of.",
-        testimonialBy: "Herbert Williams (?)",
+        testimonialBy: "Herbert Williams",
         imgpath: "herbertwilliams.jpeg"
     }, {
         type: 0,
@@ -144,7 +144,7 @@ const data = [
     }, {
         type: 1,
         imgpath: "twopotatoes.jpeg"
-    }, 
+    },
 ]
 
 export default { data }

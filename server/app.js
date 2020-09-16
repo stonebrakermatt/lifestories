@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // serve static resources
-app.use(express.static('/home/matt/repositories/lifestories/public'))
+app.use(express.static('/Users/stevenshirley/developments/lifestories/public'))
 
 // express router config in separate file
 app.use('/', router)
