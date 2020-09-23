@@ -54,6 +54,7 @@ body::-webkit-scrollbar {
   src: url('../fonts/alegreyabolditalic.ttf');
 }
 html {
+  font-family: RalewayBold;
   font-family: AlegreyaBoldItalic;
 }
 h1,
@@ -357,12 +358,15 @@ h6 {
   }
 }
 #root #app #about #chad-container #chad-txt {
+  font-family: RalewayBold;
   width: 100%;
 }
 #root #app #about #chad-container #chad-txt p {
+  font-family: RalewayBold;
   margin-top: 24px;
 }
 #root #app #about #chad-container #chad-txt p:last-child {
+  font-family: RalewayBold;
   margin-top: 0;
 }
 @media (min-width: 900px) {
